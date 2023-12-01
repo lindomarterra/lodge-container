@@ -9,18 +9,21 @@
 }
 
 
+
+
+
 /*PAGE HOME*/
-.header-home{background-color: #131111ad;}
+.header-home{background-color: rgba(44, 99, 121, 0.74);}
 
 .link-page-home{
     font-family: var(--font-01);
     cursor: pointer;
-    color: ghostwhite;
+    color: wheat;
     margin: 0 8px;
     font-size: 0.9rem;
 
 }
-.link-page-home:hover{opacity: 75%;}
+.link-page-home:hover{opacity: 60%;}
 
 .div-logo-home{
    position: absolute;
@@ -60,3 +63,14 @@
     border-top-right-radius: 25px;
     box-shadow: 20px -1px 0 0 white;
   }
+
+
+
+
+    .navbar-booking{
+      background-color: rgba(44, 99, 121, 0.74);
+      height: 20vh;
+      z-index: 100;
+      position: fixed;
+      bottom: 0;
+    }

@@ -4,7 +4,7 @@ import Main from './Main'
 
 function Home() {
     return ( 
-        <section>
+        <section >
 
                 <Header/>
                 <Main/>

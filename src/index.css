@@ -13,7 +13,6 @@
 
 
 /*PAGE HOME*/
-.header-home{background-color: rgba(44, 99, 121, 0.74);}
 
 .link-page-home{
     font-family: var(--font-01);
@@ -41,7 +40,6 @@
 .div-logo-home::before{
   content: "";
   position: absolute;
-  
   background-color: transparent;
   top: 0;
   left: 100%;
@@ -67,10 +65,4 @@
 
 
 
-    .navbar-booking{
-      background-color: rgba(44, 99, 121, 0.74);
-      height: 20vh;
-      z-index: 100;
-      position: fixed;
-      bottom: 0;
-    }
+    

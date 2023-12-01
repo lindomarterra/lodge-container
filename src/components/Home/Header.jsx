@@ -5,7 +5,7 @@ import '../../index.css'
 function Header() {
     return ( 
 
-            <header className='header-home border-bottom border-light' >
+            <header style={{backgroundColor:'rgba(44, 99, 121, 0.74)'}} className='border-bottom border-light' >
            
                 <nav className='container-lg navbar navbar-expand-md'>
                     <div className='container-fluid '>

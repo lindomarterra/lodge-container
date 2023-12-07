@@ -64,5 +64,15 @@
 
 
 
+.arrowSlideCalendarHover:hover{opacity: 50%;}
 
-    
+.date-hover{
+  cursor: pointer;
+
+}
+.date-hover:hover{
+  background-color: #222;
+  color: #fff;
+  font-weight: 700;
+}
+

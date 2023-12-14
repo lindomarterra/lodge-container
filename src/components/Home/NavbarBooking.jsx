@@ -37,9 +37,9 @@ function NavbarBooking() {
     return (
         <body>
 
-            <nav style={{backgroundColor:'grey',zIndex:'100'}} className='d-none d-lg-block position-fixed bottom-0 w-100' >
-                    <form style={{backgroundColor:'rgba(44, 99, 121, 0.74)'}} >
-                       <div className='container-fluid py-2 '>
+            <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-none d-lg-block position-fixed bottom-0 w-100' >
+                    <form  >
+                       <div className='container-fluid py-4 '>
 
                            <div className="row">
 

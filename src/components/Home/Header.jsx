@@ -1,16 +1,16 @@
 import React from 'react' 
-import { FaReact } from "react-icons/fa";
 import '../../index.css'
+import logo from '../../../src/img/logo.webp'
 
 function Header() {
     return ( 
 
-            <header style={{backgroundColor:'rgba(44, 99, 121, 0.74)'}} className='border-bottom border-light' >
+            <header className='' >
            
                 <nav className='container-lg navbar navbar-expand-md'>
                     <div className='container-fluid '>
 
-                        <FaReact  style={{width:'40px', height:'40px', cursor:'pointer'}} className='navbar-brand d-md-none'/>
+                        <img src={logo}  alt='img' style={{width:'70px', height:'80px', cursor:'pointer'}} className='navbar-brand d-md-none'/>
                         
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"                  data-bs-target="#navbarNavDropdown">    <span className="navbar-toggler-icon"></span>
                         </button>    

@@ -2,10 +2,9 @@ import React from 'react'
 import '../../index.css'
 import NavbarBooking from './NavbarBooking'
 
-
+import logo from '../../../src/img/logo.webp'
 import carouselHome01lg from '../../../src/img/carousel-home01-lg.jpg'
 import carouselHome02lg from '../../../src/img/carousel-home02-lg.jpg'
-import carouselHome03lg from '../../../src/img/carousel-home03-lg.jpg'
 import carouselHome04lg from '../../../src/img/carousel-home04-lg.jpg'
 import carouselHome05lg from '../../../src/img/carousel-home05-lg.jpg'
 import carouselHome06lg from '../../../src/img/carousel-home06-lg.jpg'
@@ -13,7 +12,6 @@ import carouselHome07lg from '../../../src/img/carousel-home07-lg.jpg'
 
 import carouselHome01sm from '../../../src/img/carousel-home01-sm.jpg'
 import carouselHome02sm from '../../../src/img/carousel-home02-sm.jpg'
-import carouselHome03sm from '../../../src/img/carousel-home03-sm.jpg'
 import carouselHome04sm from '../../../src/img/carousel-home04-sm.jpg'
 import carouselHome05sm from '../../../src/img/carousel-home05-sm.jpg'
 import carouselHome06sm from '../../../src/img/carousel-home06-sm.jpg'
@@ -26,10 +24,10 @@ function Main() {
     return ( 
         <main>
 
-            <section  className='main-home position-relative' >
+            <section  className='main-home position-relative m-1' >
     
                   <div className='div-logo-home d-none d-md-flex' >
-                      LOGO
+                      <img src={logo} alt="img" className='w-50' />
                  </div>
 
             

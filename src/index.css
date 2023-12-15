@@ -95,11 +95,20 @@
    font-variant-caps: all-small-caps;
    cursor: pointer;
    color: gray;
-   transition: all 0.2 linear;  
   }
 
   .trigger-slide:hover{ text-decoration: underline; }
 
   .img-slide{cursor: pointer; transition: all 0.4s linear; }
   .img-slide:hover{transform: scale(1.2);}
+
+
+  .btn-detalhes{
+    background-color: #222222ad;
+    color: #fff;
+  }
+
+  .btn-detalhes:hover{
+    background-color: rgba(109, 21, 6, 0.836);
+  }
 

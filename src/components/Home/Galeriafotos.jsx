@@ -31,8 +31,8 @@ function Galeriafotos() {
                     <h5 className='text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0'> Galeria de fotos </h5>
                     <small className='mt-0 pt-0 text-black-50' > Confira </small>
                 </div>
-
-                <div className='carousel fade' id='galeria-fotos'  >
+               
+                <div className='carousel carousel-fade' id='galeria-fotos'  >
 
                     <div className='carousel-inner'>
 
@@ -107,7 +107,6 @@ function Galeriafotos() {
                                                              
                             </div>  
                         </div>
-
                          
                         <div className='carousel-item'>
                               <div className='d-flex justify-content-center align-items-center'>

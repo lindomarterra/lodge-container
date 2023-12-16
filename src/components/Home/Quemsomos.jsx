@@ -31,7 +31,7 @@ function Quemsomos() {
                                 
                                {
                                 shiftSentence ? 
-                               <small className='trigger text-black-50' onClick={showParagraph} >ver mais</small> 
+                               <small style={{cursor:'pointer'}} className='text-black-50' onClick={showParagraph} >ver mais</small> 
                                : 
                                <div style={{fontStyle:'italic'}} className='fs-6 text-black-50'>
                                 
@@ -43,7 +43,7 @@ function Quemsomos() {
 
                                 <p>A pousada fica em uma zona rural a 4,5 Km do centro de Capitólio, enquanto Passos está a 74 kmda propriedade.</p>
                                 
-                                   <small className='trigger text-black-50' onClick={showParagraph} > ver menos </small>
+                                   <small style={{cursor:'pointer'}} className='text-black-50' onClick={showParagraph} > ver menos </small>
                                </div>
                                }
                                 

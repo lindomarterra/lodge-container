@@ -115,6 +115,7 @@
 
 
   p.truncar-3l{
+    font-size: 0.9rem;
     display: -webkit-box;  /* webkit-box é um display ue permite esse tipo de truncamento */
     -webkit-line-clamp: 3; /* indica que esse truncamento será de 3 linhas */
     -webkit-box-orient: vertical; /* a orientação será na vertical */

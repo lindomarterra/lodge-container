@@ -26,7 +26,7 @@ function Acomodacoes() {
                
 
                     {/*MOBILE  CAROUSEL*/}                    
-                <div className='carousel slide carousel-dark d-sm-none'
+                <div className='carousel slide d-sm-none'
                     data-bs-ride="carousel" id='slide-acomodacoes-mobile' >
 
 

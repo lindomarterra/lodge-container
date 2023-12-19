@@ -23,7 +23,7 @@ function Quemsomos() {
                     </div>
                     <div style={{backgroundColor:'rgba(223, 212, 212, 0.082', border:'1px solid #615e5e10'}} className='col-lg-6'>
                             <div className='p-3'>
-                                <h6 className='text-black-50 fw-bolder'>Pousada Villa Container Lodge:</h6>
+                                <h5 className='text-black-50 fw-bolder'>Pousada Villa Container Lodge:</h5>
                                 <p style={{fontStyle:'italic'}} className='fs-6 text-black-50'>
                                 A Villa Container Lodge está situado no município de Capitólio MG. Ela possui uma localização privilegiada, tendo uma linda vista e acesso para a represa de Furnas.
                                 </p>
@@ -51,8 +51,8 @@ function Quemsomos() {
 
                             </div>
                             <div className='p-3'>
-                                <h6 className='text-black-50 fw-bolder'>Comodidades:</h6>
-                                <div style={{fontStyle:'italic'}} className='fs-6 text-black-50' >
+                                <h5 className='text-black-50 fw-bolder'>Comodidades:</h5>
+                                <div className='fs-6 text-black-50' >
                                     <div className='row'>
                                         <div className='col-sm-6'>
                                             <ul>

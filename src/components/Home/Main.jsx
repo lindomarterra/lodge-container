@@ -19,6 +19,7 @@ import carouselHome07sm from '../../../src/img/carousel-home07-sm.jpg'
 import Quemsomos from './Quemsomos'
 import Galeriafotos from './Galeriafotos'
 import Acomodacoes from './Acomodacoes'
+import Depoimentos from './Depoimentos'
 
 
 function Main() {
@@ -82,6 +83,8 @@ function Main() {
             <Galeriafotos/>
 
             <Acomodacoes/>
+
+            <Depoimentos/>
           
 
         </main>

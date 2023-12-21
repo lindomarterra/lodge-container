@@ -125,6 +125,8 @@
 }
 
 
+.txt-comment{color: #0701018f; cursor: pointer; }
+
 .txt-comment::-webkit-scrollbar{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -157,3 +159,7 @@
   color: rgb(220, 227, 228);
   background-color: #22222288;
 }
+
+
+
+

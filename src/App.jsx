@@ -7,6 +7,9 @@ function App() {
     <body>
       
           <Home/>
+        
+      
+
 
     </body>
   )

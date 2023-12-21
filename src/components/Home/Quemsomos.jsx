@@ -24,7 +24,7 @@ function Quemsomos() {
                     <div style={{backgroundColor:'rgba(223, 212, 212, 0.082', border:'1px solid #615e5e10'}} className='col-lg-6'>
                             <div className='p-3'>
                                 <h5 className='text-black-50 fw-bolder'>Pousada Villa Container Lodge:</h5>
-                                <p style={{fontStyle:'italic'}} className='fs-6 text-black-50'>
+                                <p className='fs-6 text-black-50'>
                                 A Villa Container Lodge está situado no município de Capitólio MG. Ela possui uma localização privilegiada, tendo uma linda vista e acesso para a represa de Furnas.
                                 </p>
                                   
@@ -33,7 +33,7 @@ function Quemsomos() {
                                 shiftSentence ? 
                                <small style={{cursor:'pointer'}} className='text-black-50' onClick={showParagraph} >ver mais</small> 
                                : 
-                               <div style={{fontStyle:'italic'}} className='fs-6 text-black-50'>
+                               <div className='fs-6 text-black-50'>
                                 
                                 <p>Todos os quartos possuem banheiro privativo e completo e os quartos Luxo têm varanda com vistapara a lagoa e o nascer do sol.</p>
 
@@ -55,14 +55,14 @@ function Quemsomos() {
                                 <div className='fs-6 text-black-50' >
                                     <div className='row'>
                                         <div className='col-sm-6'>
-                                            <ul>
+                                            <ul className='ps-1' >
                                                 <li className='me-2 pe-2'>Animais permitido</li>
                                                 <li className='me-2 pe-2'>Ar condicionado split</li>
                                                 <li className='me-2 pe-2'>Café da manhã incluso</li>
                                             </ul>
                                         </div>
                                         <div className='col-sm-6'>
-                                            <ul>
+                                            <ul className='ps-1' >
                                                 <li className='me-2 pe-2'>Esportes aquáticos</li>
                                                 <li className='me-2 pe-2'>Estacionamento gratuito</li>
                                                 <li className='me-2 pe-2'>wi-fi grátis</li>

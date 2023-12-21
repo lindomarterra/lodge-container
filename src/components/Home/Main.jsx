@@ -20,6 +20,8 @@ import Quemsomos from './Quemsomos'
 import Galeriafotos from './Galeriafotos'
 import Acomodacoes from './Acomodacoes'
 import Depoimentos from './Depoimentos'
+import GoogleMap from './GoogleMap'
+import Footer from './Footer'
 
 
 function Main() {
@@ -85,7 +87,10 @@ function Main() {
             <Acomodacoes/>
 
             <Depoimentos/>
-          
+
+            <GoogleMap/>
+
+            <Footer/>
 
         </main>
     )

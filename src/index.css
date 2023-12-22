@@ -163,3 +163,34 @@
 
 
 
+
+
+
+
+
+
+
+.zapHover{cursor: pointer;}
+.zapHover:hover{ text-decoration: underline; opacity:70% }
+
+.reservasHover{cursor: pointer;}
+.reservasHover:hover{ text-decoration: underline; opacity:70% }
+
+.enderecoHover{cursor: pointer;}
+.enderecoHover:hover{ text-decoration: underline; opacity:70% }
+
+
+
+
+
+.youTubeHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
+.instaHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
+.tripHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
+
+.instaHover:hover{background-image: linear-gradient(to top, rgba(0, 0, 0, 0.568), yellow , rgba(255, 0, 0, 0.836) );}
+.youTubeHover:hover{background-color: red ;}
+.tripHover:hover{background-color: aqua ;}
+
+
+
+

@@ -22,6 +22,7 @@ import Acomodacoes from './Acomodacoes'
 import Depoimentos from './Depoimentos'
 import GoogleMap from './GoogleMap'
 import Footer from './Footer'
+import UnderFooter from './UnderFooter'
 
 
 function Main() {
@@ -91,6 +92,8 @@ function Main() {
             <GoogleMap/>
 
             <Footer/>
+
+            <UnderFooter/>
 
         </main>
     )

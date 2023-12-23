@@ -183,9 +183,9 @@
 
 
 
-.youTubeHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
-.instaHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
-.tripHover{background-color: silver;  cursor: pointer; transition: all 5ms linear; }
+.youTubeHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
+.instaHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
+.tripHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
 
 .instaHover:hover{background-image: linear-gradient(to top, rgba(0, 0, 0, 0.568), yellow , rgba(255, 0, 0, 0.836) );}
 .youTubeHover:hover{background-color: red ;}

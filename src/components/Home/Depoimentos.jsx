@@ -121,7 +121,7 @@ function Depoimentos() {
 
                    {/* BTN CALL MODAL */}
                 <div className='text-end' >
-                    <button className='btnVerTodos fw-bold border-0 p-2 rounded-2' data-bs-toggle='modal' data-bs-target='#modal-depoimentos' > ver todos </button>
+                    <button className='btnVerTodos fw-bold border-0 px-3 py-2 rounded-1' data-bs-toggle='modal' data-bs-target='#modal-depoimentos' > ver todos </button>
                 </div>
 
 

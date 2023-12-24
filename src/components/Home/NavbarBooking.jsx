@@ -12,6 +12,7 @@ import { FaCircleArrowLeft } from "react-icons/fa6"
 import { FaCircleArrowRight } from "react-icons/fa6"
 import { IoBedSharp } from "react-icons/io5"
 import { RiCoupon3Line } from "react-icons/ri"
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
 
@@ -36,15 +37,22 @@ function NavbarBooking() {
     const addKids=()=>{ if(qtdKids >= 4){ setQtdKids(4) }else{ setQtdKids(qtdKids + 1) } }
     const removeKids=()=>{ if(qtdKids <= 0){ setQtdKids(0) }else{ setQtdKids(qtdKids - 1) } }
 
+    function MyButton() {
+        return (
+          <button>I'm a button</button>
+        )
+      }
+
 
   
     return (
         <body>
 
+                {/* BOOKING AND WHATSAPP */}
             <div style={{cursor:'pointer', zIndex:'200' }} className='d-flex flex-column position-fixed bottom-50 bg-success py-3 px-1 ' >
 
-                <ImWhatsapp className='fs-1 rounded-5 bg-light p-2 mb-1 ' />
-                <TbBrandBooking className='fs-1 rounded-5 bg-light p-2 ' onClick={showHideNavbarBooking}  />
+                <ImWhatsapp className='fs-1 rounded-5 bg-light p-2 mb-1 whatsHover' />
+                <TbBrandBooking className='fs-1 rounded-5 bg-light p-2 bookingHover' onClick={showHideNavbarBooking}  />
                 {navbarShow?
                 <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-none d-lg-block position-fixed bottom-0 w-100' >
                         <form  >
@@ -112,6 +120,13 @@ function NavbarBooking() {
                 :
                 ''
                 }
+            </div>
+
+                {/* ARROW UP */}
+            <div className='bg-black p-1 opacity-75 position-fixed bottom-50 end-0' >
+                <FaArrowAltCircleUp  style={{cursor:'pointer'}} className='text-white f-6'  onClick={MyButton}  />
+
+
             </div>
 
            

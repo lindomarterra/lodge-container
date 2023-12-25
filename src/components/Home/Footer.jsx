@@ -45,7 +45,7 @@ function Footer() {
                     <div className="col-md-6 col-lg-4">
                         <div className="p-2 d-flex align-items-center ">
                             <FaLocationDot className='me-2 fs-3 text-black-50' />            
-                            <div className='text-black-50 enderecoHover ' >
+                            <div className='text-black-50' >
                                 <small> Estrada Macaúbas, Km 1.5, Centro </small> <br/>
                                 <small>Capitólio, Minas Gerais, Brasil</small> <br/>
                                 <small>CEP: 37.930-000</small>

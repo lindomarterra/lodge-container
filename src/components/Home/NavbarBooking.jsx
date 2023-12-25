@@ -1,4 +1,5 @@
 import React, { useState } from 'react' 
+
 import '../../index.css'
 import { ImWhatsapp } from "react-icons/im";
 import { TbBrandBooking } from "react-icons/tb";
@@ -37,99 +38,160 @@ function NavbarBooking() {
     const addKids=()=>{ if(qtdKids >= 4){ setQtdKids(4) }else{ setQtdKids(qtdKids + 1) } }
     const removeKids=()=>{ if(qtdKids <= 0){ setQtdKids(0) }else{ setQtdKids(qtdKids - 1) } }
 
-    function MyButton() {
-        return (
-          <button>I'm a button</button>
-        )
-      }
+    
+    function BotaoVoltarAoTopo() {window.scrollTo(0, 0) }
+ 
 
-
-  
     return (
         <body>
 
                 {/* BOOKING AND WHATSAPP */}
             <div style={{cursor:'pointer', zIndex:'200' }} className='d-flex flex-column position-fixed bottom-50 bg-success py-3 px-1 ' >
 
-                <ImWhatsapp className='fs-1 rounded-5 bg-light p-2 mb-1 whatsHover' />
-                <TbBrandBooking className='fs-1 rounded-5 bg-light p-2 bookingHover' onClick={showHideNavbarBooking}  />
+                <abbr title="reserve pelo whatsapp">
+                    <ImWhatsapp className='fs-1 rounded-5 bg-light p-2 mb-1 whatsHover' />
+                </abbr>
+                <abbr title="click para selicionar datas">
+                    <TbBrandBooking className='fs-1 rounded-5 bg-light p-2 bookingHover' onClick={showHideNavbarBooking}  />
+                </abbr>
                 {navbarShow?
-                <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-none d-lg-block position-fixed bottom-0 w-100' >
-                        <form  >
-                           <div className='container-fluid py-4 '>
-                               <div className="row">
-                                    <div className='col-md-6 col-lg-3'>
-                                         <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
-                                            <VscCalendar  style={{fontSize:'1.5rem'}}  />
-                                            <div  > 01 dez - 02 dez </div>
-                                            {calendarOpen ?
-                                                <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow} data-bs-dimiss='#staticBackdrop' />
-                
-                                             :
-                                                <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow}
-                                                 data-bs-toggle='modal' data-bs-target='#staticBackdrop'/>
-                                            }
-                
-                                        </div>
-                                    </div>
-                                    <div className='col-md-6 col-lg-3'>
-                                       <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
-                                            <GoPeople  style={{fontSize:'1.5rem'}}  />
-                                            <div > <span> {qtdGuest + qtdKids} </span> Hóspedes </div>
-                                            <IoBedSharp style={{fontSize:'1.5rem'}} />
-                                            <div  > 1 </div>
-                                            {dateBooking ?
-                                                <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
-                                                onClick={shiftArrowDateBooking} data-bs-dimiss='#date-booking-modal' />
-                
-                                             :
-                                                <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
-                                                onClick={shiftArrowDateBooking}
-                                                 data-bs-toggle='modal' data-bs-target='#date-booking-modal'/>
-                                            }
-                
-                                        </div>
-                                    </div>
-                                    <div className='col-md-6 col-lg-3'>
-                                       <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
-                                            <RiCoupon3Line  style={{fontSize:'1.5rem'}}  />
-                                            <div > {cupomInserido} </div>
-                
-                                            {cupomOpen ?
-                                                <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
-                                                 onClick={shiftArrowCupom}  data-bs-dissmiss='#cupom-modal'  />
-                
-                                             :
-                                                <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
-                
-                                                onClick={shiftArrowCupom} data-bs-toggle='modal' data-bs-target='#cupom-modal'  />
-                                            }
-                
-                                        </div>
-                                    </div>
-                                    <div className='col-md-6 col-lg-3'>
-                                       <div className='bg-success pesquisar-hover text-white fw-bolder border-light border border-3 d-flex rounded-5 py-1 justify-content-around align-items-center'>
-                                                Pesquisar
-                                        </div>
-                                    </div>
-                
+                <div>
+                    {/*MOBILE*/}
+                    <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-lg-none position-fixed start-0 bottom-0 w-100' >
+                            <form  >
+                               <div className='container-fluid py-4 '>
+                                   <div className="">
+
+                                             <div className='bg-light d-flex py-2 my-1 justify-content-around align-items-center'>
+                                                <VscCalendar  style={{fontSize:'1.5rem'}}  />
+                                                <div  > 01 dez - 02 dez </div>
+                                                {calendarOpen ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow} data-bs-dimiss='#staticBackdrop' />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow}
+                                                     data-bs-toggle='modal' data-bs-target='#staticBackdrop'/>
+                                                }
+                    
+                                            </div>
+
+                                           <div className='bg-light d-flex py-2 my-1 justify-content-around align-items-center'>
+                                                <GoPeople  style={{fontSize:'1.5rem'}}  />
+                                                <div > <span> {qtdGuest + qtdKids} </span> Hóspedes </div>
+                                                <IoBedSharp style={{fontSize:'1.5rem'}} />
+                                                <div  > 1 </div>
+                                                {dateBooking ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                    onClick={shiftArrowDateBooking} data-bs-dimiss='#date-booking-modal' />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                    onClick={shiftArrowDateBooking}
+                                                     data-bs-toggle='modal' data-bs-target='#date-booking-modal'/>
+                                                }
+                                            </div>
+                                        
+                                           <div className='bg-light d-flex py-2 my-1 justify-content-around align-items-center'>
+                                                <RiCoupon3Line  style={{fontSize:'1.5rem'}}  />
+                                                <div > {cupomInserido} </div>
+                    
+                                                {cupomOpen ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                     onClick={shiftArrowCupom}  data-bs-dissmiss='#cupom-modal'  />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                    
+                                                    onClick={shiftArrowCupom} data-bs-toggle='modal' data-bs-target='#cupom-modal'  />
+                                                }
+                    
+                                            </div>
+                                        
+                                           <div className='bg-danger pesquisar-hover text-white fw-bolder border-light border border-3 d-flex py-1 my-1 justify-content-around align-items-center'>
+                                                    Pesquisar
+                                            </div>
+                    
+                                   </div>
                                </div>
-                           </div>
-                        </form>
-                </nav>
+                            </form>
+                    </nav>
+                    {/*DESKTOP*/}
+                    <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-none d-lg-block position-fixed start-0 bottom-0 w-100' >
+                            <form  >
+                               <div className='container-fluid py-4 '>
+                                   <div className="row">
+                                        <div className='col-md-6 col-lg-3'>
+                                             <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
+                                                <VscCalendar  style={{fontSize:'1.5rem'}}  />
+                                                <div  > 01 dez - 02 dez </div>
+                                                {calendarOpen ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow} data-bs-dimiss='#staticBackdrop' />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}} onClick={shiftArrow}
+                                                     data-bs-toggle='modal' data-bs-target='#staticBackdrop'/>
+                                                }
+                    
+                                            </div>
+                                        </div>
+                                        <div className='col-md-6 col-lg-3'>
+                                           <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
+                                                <GoPeople  style={{fontSize:'1.5rem'}}  />
+                                                <div > <span> {qtdGuest + qtdKids} </span> Hóspedes </div>
+                                                <IoBedSharp style={{fontSize:'1.5rem'}} />
+                                                <div  > 1 </div>
+                                                {dateBooking ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                    onClick={shiftArrowDateBooking} data-bs-dimiss='#date-booking-modal' />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                    onClick={shiftArrowDateBooking}
+                                                     data-bs-toggle='modal' data-bs-target='#date-booking-modal'/>
+                                                }
+                    
+                                            </div>
+                                        </div>
+                                        <div className='col-md-6 col-lg-3'>
+                                           <div className='bg-light d-flex rounded-5 py-2 justify-content-around align-items-center'>
+                                                <RiCoupon3Line  style={{fontSize:'1.5rem'}}  />
+                                                <div > {cupomInserido} </div>
+                    
+                                                {cupomOpen ?
+                                                    <IoIosArrowUp   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                                                     onClick={shiftArrowCupom}  data-bs-dissmiss='#cupom-modal'  />
+                    
+                                                 :
+                                                    <IoIosArrowDown   style={{fontSize:'1.5rem', cursor:'pointer'}}
+                    
+                                                    onClick={shiftArrowCupom} data-bs-toggle='modal' data-bs-target='#cupom-modal'  />
+                                                }
+                    
+                                            </div>
+                                        </div>
+                                        <div className='col-md-6 col-lg-3'>
+                                           <div className='bg-danger pesquisar-hover text-white fw-bolder border-light border border-3 d-flex rounded-5 py-1 justify-content-around align-items-center'>
+                                                    Pesquisar
+                                            </div>
+                                        </div>
+                    
+                                   </div>
+                               </div>
+                            </form>
+                    </nav>
+                </div>
                 :
                 ''
                 }
             </div>
-
                 {/* ARROW UP */}
-            <div className='bg-black p-1 opacity-75 position-fixed bottom-50 end-0' >
-                <FaArrowAltCircleUp  style={{cursor:'pointer'}} className='text-white f-6'  onClick={MyButton}  />
-
-
+            <div className='bg-black opacity-75 position-fixed bottom-50 end-0 pb-1 px-1' >
+                <abbr title='ir para o topo' >
+                <FaArrowAltCircleUp  style={{cursor:'pointer', zIndex:'300' }} className='text-white f-6'  
+                onClick={BotaoVoltarAoTopo} />
+                </abbr>
             </div>
-
-           
+        
 
             {/* MODAL CALENDAR */}
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" >

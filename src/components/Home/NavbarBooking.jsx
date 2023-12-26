@@ -40,24 +40,29 @@ function NavbarBooking() {
 
     
     function BotaoVoltarAoTopo() {window.scrollTo(0, 0) }
+
+    const bodyScrolling=()=>{
+        alert('test')
+    }
  
 
     return (
-        <body>
+        <body onScroll={bodyScrolling} >
 
                 {/* BOOKING AND WHATSAPP */}
-            <div style={{cursor:'pointer', zIndex:'200' }} className='d-flex flex-column position-fixed bottom-50 bg-success py-3 px-1 ' >
+                <div style={{cursor:'pointer', zIndex:'200' }} className='position-fixed bottom-0 start-0 d-flex flex-column'  >
+                    <abbr style={{cursor:'pointer'}} title="reserve pelo whatsapp" className='bg-success rounded-5 p-2 mb-1' >
+                        <ImWhatsapp className='fs-1 text-light whatsHover' />
+                    </abbr>
+                    <abbr style={{cursor:'pointer'}} title="click para selicionar datas" className='bg-black rounded-5 p-2' >
+                        <TbBrandBooking className='fs-1 text-light bookingHover' onClick={showHideNavbarBooking}  />
+                    </abbr>
+                </div>
 
-                <abbr title="reserve pelo whatsapp">
-                    <ImWhatsapp className='fs-1 rounded-5 bg-light p-2 mb-1 whatsHover' />
-                </abbr>
-                <abbr title="click para selicionar datas">
-                    <TbBrandBooking className='fs-1 rounded-5 bg-light p-2 bookingHover' onClick={showHideNavbarBooking}  />
-                </abbr>
                 {navbarShow?
                 <div>
                     {/*MOBILE*/}
-                    <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-lg-none position-fixed start-0 bottom-0 w-100' >
+                    <nav style={{backgroundColor:'#161F30',zIndex:'100'}} className='d-lg-none position-fixed start-0 top-0 w-100' >
                             <form  >
                                <div className='container-fluid py-4 '>
                                    <div className="">
@@ -116,7 +121,7 @@ function NavbarBooking() {
                             </form>
                     </nav>
                     {/*DESKTOP*/}
-                    <nav style={{backgroundColor:'#222',zIndex:'100'}} className='d-none d-lg-block position-fixed start-0 bottom-0 w-100' >
+                    <nav style={{backgroundColor:'#161F30',zIndex:'100'}} className='d-none d-lg-block position-fixed start-0 top-0 w-100' >
                             <form  >
                                <div className='container-fluid py-4 '>
                                    <div className="row">
@@ -183,14 +188,14 @@ function NavbarBooking() {
                 :
                 ''
                 }
-            </div>
+
                 {/* ARROW UP */}
-            <div className='bg-black opacity-75 position-fixed bottom-50 end-0 pb-1 px-1' >
+                <div style={{zIndex:'100'}} className='bg-black opacity-75 position-fixed bottom-0 end-50 px-1 py-0'   >
                 <abbr title='ir para o topo' >
                 <FaArrowAltCircleUp  style={{cursor:'pointer', zIndex:'300' }} className='text-white f-6'  
                 onClick={BotaoVoltarAoTopo} />
                 </abbr>
-            </div>
+                </div>
         
 
             {/* MODAL CALENDAR */}

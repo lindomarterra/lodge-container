@@ -189,8 +189,8 @@
 
 
 
-.whatsHover:hover{ opacity: 75%; border:2px solid grey }
-.bookingHover:hover{ opacity: 75%; border:2px solid grey }
+.whatsHover:hover{ opacity: 30%; }
+.bookingHover:hover{ opacity: 30%; }
 
 
 

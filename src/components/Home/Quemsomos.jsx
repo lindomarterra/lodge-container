@@ -11,7 +11,6 @@ function Quemsomos() {
     return (
         <section className='mb-4 py-4' >
             <div className='container-md'>
-                <hr/>
                 <div className='mb-4'>
                     <h5 className='text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0'>quem somos</h5>
                     <small className='mt-0 pt-0 text-black-50' >Saiba mais</small>

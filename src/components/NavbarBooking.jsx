@@ -1,6 +1,6 @@
 import React, { useState } from 'react' 
 
-import '../../index.css'
+import '../index.css'
 import { ImWhatsapp } from "react-icons/im";
 import { TbBrandBooking } from "react-icons/tb";
 import { VscCalendar } from "react-icons/vsc"

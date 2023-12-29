@@ -1,5 +1,5 @@
 import React from 'react' 
-import '../../index.css'
+import '../index.css'
 import { IoMdStar } from "react-icons/io"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdOutlineEmail } from "react-icons/md"

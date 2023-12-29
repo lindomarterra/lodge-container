@@ -1,6 +1,6 @@
 import React, {useState} from 'react' 
-import imgQuemSomos from '../../img/quemsomospage.webp'
-import '../../index.css'
+import imgQuemSomos from './img/quemsomospage.webp'
+import '../index.css'
 import { FaRegClock } from "react-icons/fa"
 
 function Quemsomos() {

@@ -1,6 +1,6 @@
 import React  from 'react' 
-import '../../index.css'
-import Commas from "../.././img/quotation-mark.png"
+import '../index.css'
+import Commas from "./img/quotation-mark.png"
 
 function Depoimentos() {
     

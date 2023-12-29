@@ -1,13 +1,10 @@
 import React  from 'react' 
-import '../../index.css'
-import acomodacoes1 from '../.././img/acomodacoes1.webp'
-import acomodacoes2 from '../.././img/acomodacoes2.webp'
-import acomodacoes3 from '../.././img/acomodacoes3.webp'
-import acomodacoes4 from '../.././img/acomodacoes4.webp'
-import acomodacoes5 from '../.././img/acomodacoes5.webp'
-
-
-
+import '../index.css'
+import acomodacoes1 from './img/acomodacoes1.webp'
+import acomodacoes2 from './img/acomodacoes2.webp'
+import acomodacoes3 from './img/acomodacoes3.webp'
+import acomodacoes4 from './img/acomodacoes4.webp'
+import acomodacoes5 from './img/acomodacoes5.webp'
 
 
 

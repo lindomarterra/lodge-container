@@ -77,7 +77,7 @@ function NavbarBooking() {
           title="reserve pelo whatsapp"
           >
         <Link 
-          to="https://web.whatsapp.com/send?phone=5551998068587" 
+          to="https://api.whatsapp.com/send?phone=55037999252346" 
           target="_blank"  
           style={{ cursor: "pointer", zIndex: "200" }}
           className="position-fixed bottom-0 start-0 bg-success rounded-5 p-2 mb-1"

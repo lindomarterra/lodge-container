@@ -44,7 +44,7 @@ function Footer() {
 
               <p>
                 <Link
-                  to="https://web.whatsapp.com/send?phone=5551998068587"
+                  to="https://api.whatsapp.com/send?phone=55037999252346"
                   target="_blank"
                   className="ms-2 zapHover text-black-50"
                 >

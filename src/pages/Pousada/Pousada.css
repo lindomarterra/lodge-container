@@ -1,0 +1,12 @@
+.divCheckInOut{
+    background-color: rgba(192, 192, 192, 0.226);
+    border: 1px solid #22222218;
+}
+
+.logoCalender{
+    background-color: #222222b7;
+    position: absolute;
+    top: -20%;
+    left: 40%;
+}
+

@@ -1,0 +1,17 @@
+.trigger-slide {
+  font-variant-caps: all-small-caps;
+  cursor: pointer;
+  color: gray;
+}
+
+.trigger-slide:hover {
+  text-decoration: underline;
+}
+
+.img-slide {
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.img-slide:hover {
+  transform: scale(1.2);
+}

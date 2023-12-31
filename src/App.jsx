@@ -1,5 +1,5 @@
 import React from 'react' 
-import Home from './components/Home'
+import AppRoutes from './routes'
 
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <body>
       
-        <Home/>
+        <AppRoutes/>
         
     </body>
   )

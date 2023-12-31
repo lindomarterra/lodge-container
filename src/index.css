@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     --font-01: 'PT Sans', sans-serif;
 }
 
@@ -12,153 +10,6 @@
 
 
 
-/*PAGE HOME*/
-
-.link-page-home{
-    font-family: var(--font-01);
-    cursor: pointer;
-    color:#22222286;
-    margin: 0 8px;
-    font-size: 0.9rem;
-
-}
-.link-page-home:hover{opacity: 60%;}
-
-.div-logo-home{
-   position: absolute;
-   top: 0;
-   left: 5%;
-   width: 200px;
-   height: 150px; 
-   z-index: 100;
-   background-color: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 0 0 25px 25px ;
-}
-.div-logo-home::before{
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  top: 0;
-  left: 100%;
-  height: 100px;
-  width: 400px;
-  border-top-left-radius: 25px;
-  box-shadow: -35px 0 0 0 white;
-}
-
-.div-logo-home::after{
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    top: 0;
-    left: -25%;
-    height: 95px;
-    width: 50px;
-    border-top-right-radius: 25px;
-    box-shadow: 20px -1px 0 0 white;
-  }
-
-
-
-.arrowSlideCalendarHover:hover{opacity: 50%;}
-
-.date-hover{
-  cursor: pointer;
-
-}
-.date-hover:hover{
-  background-color: #222222a9;
-  color: #fff;
-  font-weight: 700;
-}
-
-
-.cupom-icon:focus-within{
-  border:1px solid transparent;
-  outline: 1px solid transparent;
-}
-
-
-.pesquisar-hover{cursor: pointer; font-size: 1.05rem;}
-
-.pesquisar-hover:hover{font-size: 1.1rem;}
-
-
-
-
-
-
-.trigger-slide{
-   font-variant-caps: all-small-caps;
-   cursor: pointer;
-   color: gray;
-  }
-  
-
-  .trigger-slide:hover{ text-decoration: underline; }
-
-  .img-slide{cursor: pointer; transition: all 0.4s linear; }
-  .img-slide:hover{transform: scale(1.2);}
-
-
-  .btn-detalhes{
-    background-color: #222222ad;
-    color: #fff;
-  }
-
-  .btn-detalhes:hover{
-    background-color: rgba(109, 21, 6, 0.836);
-  }
-
-
-
-  p.truncar-3l{
-    font-size: 0.9rem;
-    display: -webkit-box;  /* webkit-box é um display ue permite esse tipo de truncamento */
-    -webkit-line-clamp: 3; /* indica que esse truncamento será de 3 linhas */
-    -webkit-box-orient: vertical; /* a orientação será na vertical */
-    overflow: hidden; /* o exedente ficará escondido */
-    text-overflow: ellipsis; 
-}
-
-
-.txt-comment{color: #0701018f; cursor: pointer; }
-
-.txt-comment::-webkit-scrollbar{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  background-color: #22222246;
-  width: 10px;
-  max-height: 10px;
-}
-.txt-comment::-webkit-scrollbar-thumb{
-  background-color: #fff;
-  max-height: 10px;
-  border-radius: 10px;
-}
-
-
-
-
-
-
-.btnVerTodos{
-  background-color: rgba(183, 193, 194, 0.26);
-  color: #22222288;
-  border: 1px solid #a8a2a225;
-  font-variant: small-caps;
-  transition: all 0.5s linear;
-}
-
-.btnVerTodos:hover{
-  color: rgb(220, 227, 228);
-  background-color: #22222288;
-}
 
 
 
@@ -167,30 +18,8 @@
 
 
 
+ 
 
-
-
-.zapHover{cursor: pointer;}
-.zapHover:hover{ text-decoration: underline; opacity:70% }
-
-.reservasHover{cursor: pointer;}
-.reservasHover:hover{ text-decoration: underline; opacity:70% }
-
-
-
-
-.youTubeHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
-.instaHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
-.tripHover{background-color: silver;  cursor: pointer; transition: all 0.5s linear; }
-
-.instaHover:hover{background-image: linear-gradient(to top, yellow , rgba(255, 0, 0, 0.836) );}
-.youTubeHover:hover{background-color: red ;}
-.tripHover:hover{background-color: aqua ;}
-
-
-
-.whatsHover:hover{ opacity: 30%; }
-.bookingHover:hover{ opacity: 30%; }
 
 
 

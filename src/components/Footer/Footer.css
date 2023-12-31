@@ -1,0 +1,46 @@
+.zapHover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.zapHover:hover {
+  text-decoration: underline;
+  opacity: 70%;
+}
+.reservasHover{
+  text-decoration: none;
+  cursor: pointer;
+}
+.reservasHover:hover {
+  text-decoration: underline;
+}
+
+.googlemapsHover{
+  cursor: pointer;
+  text-decoration: none;
+}
+.googlemapsHover:hover{
+  text-decoration: underline;
+}
+
+.youTubeHover {
+  background-color: silver;
+  cursor: pointer;
+}
+.instaHover {
+  background-color: silver;
+  cursor: pointer;
+}
+.tripHover {
+  background-color: silver;
+  cursor: pointer;
+}
+
+.instaHover:hover {
+  background-image: linear-gradient(to top, yellow, rgba(255, 0, 0, 0.836));
+}
+.youTubeHover:hover {
+  background-color: red;
+}
+.tripHover:hover {
+  background-color: aqua;
+}

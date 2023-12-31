@@ -1,0 +1,42 @@
+.whatsHover{
+  font-size: 1.8rem;
+  transition: all 0.3s linear;
+}
+.whatsHover:hover {
+  font-size: 2rem;
+}
+.bookingHover{
+  font-size: 1.8rem;
+  transition: all 0.3s linear;
+}
+.bookingHover:hover {
+  font-size: 2rem;
+}
+
+.pesquisar-hover {
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all 0.2s linear;
+}
+
+.pesquisar-hover:hover {
+  font-size: 1.1rem;
+}
+
+.date-hover {
+  cursor: pointer;
+}
+.date-hover:hover {
+  background-color: #222222a9;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cupom-icon:focus-within {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+
+.arrowSlideCalendarHover:hover {
+  opacity: 50%;
+}

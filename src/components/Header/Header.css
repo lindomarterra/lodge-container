@@ -1,0 +1,10 @@
+.header-hover {
+  font-family: var(--font-01);
+  cursor: pointer;
+  color: #22222286;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+.header-hover:hover {
+  opacity: 60%;
+}

@@ -1,0 +1,31 @@
+.txt-comment{color: #0701018f; cursor: pointer; }
+
+.txt-comment::-webkit-scrollbar{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #22222246;
+  width: 10px;
+  max-height: 10px;
+}
+.txt-comment::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  max-height: 10px;
+  border-radius: 10px;
+}
+
+
+.btnVerTodos{
+    background-color: rgba(183, 193, 194, 0.26);
+    color: #22222288;
+    border: 1px solid #a8a2a225;
+    font-variant: small-caps;
+    transition: all 0.5s linear;
+  }
+  
+  .btnVerTodos:hover{
+    color: rgb(220, 227, 228);
+    background-color: #22222288;
+  }
+  

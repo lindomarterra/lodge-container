@@ -1,6 +1,9 @@
+
 .divCheckInOut{
-    background-color: rgba(192, 192, 192, 0.226);
-    border: 1px solid #22222218;
+    background-color: rgba(219, 216, 216, 0.116);
+    border: 1px solid #63616118;
+    min-height: 120px;
+    margin-top: 2.5rem;
 }
 
 .logoCalender{
@@ -10,3 +13,14 @@
     left: 40%;
 }
 
+.whatsappLink{
+    text-decoration: none;
+}
+
+.whatsappLink:hover{
+    text-decoration: underline;
+}
+
+.backGroundSection{
+    background-color: rgba(245, 222, 179, 0.267);
+}

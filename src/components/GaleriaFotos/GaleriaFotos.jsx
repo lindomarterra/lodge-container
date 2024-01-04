@@ -19,9 +19,8 @@ import galeria15 from "../../img/galeriafotos15.webp";
 
 function GaleriaFotos() {
   return (
-    <section className="mb-5 pb-5">
+    <section className="mb-4 pb-4">
       <div className="container-md">
-        <hr />
         <div className="mb-4">
           <h5 className="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
             {" "}

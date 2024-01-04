@@ -12,15 +12,19 @@ import { FaChild } from "react-icons/fa";
 import { SiPix } from "react-icons/si";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { GiClick } from "react-icons/gi";
-
-
+import Acomodacoes from '../../components/Acomodacoes/Acomodacoes'
+import GaleriaFotos from '../../components/GaleriaFotos/GaleriaFotos'
+import GoogleMap from '../../components/GoogleMaps/GoogleMap'
+import Footer from '../../components/Footer/Footer'
+import NavbarBooking from '../../components/NavbarBooking/NavbarBooking'
 
 function Pousada() {
   return (
     <body >
 
-      <Header />
-      
+      <Header />      
+
+          {/**Only Pousada Page */}
       <main className="container" >
 
         {/** FIRST COMPONENT  */}
@@ -62,7 +66,7 @@ function Pousada() {
                       
                           <div className="mt-5 ">
                             <span className="fs-6 text-black-50 fw-semibold">
-                              CHECK <i>IN-OUT</i>
+                              Check <i>IN-OUT</i>
                             </span>
                             <br />
                             <span style={{ fontSize: "0.8rem" }} className="text-black-50">
@@ -124,7 +128,7 @@ function Pousada() {
                       
                           <div className="mt-5 ">
                             <span className="fs-6 text-black-50 fw-semibold">
-                              CHECK <i>IN-OUT</i>
+                              Check <i>IN-OUT</i>
                             </span>
                             <br />
                             <span style={{ fontSize: "0.8rem" }} className="text-black-50">
@@ -187,7 +191,7 @@ function Pousada() {
                       
                           <div className="mt-5 ">
                             <span className="fs-6 text-black-50 fw-semibold">
-                              CHECK <i>IN-OUT</i>
+                              Check <i>IN-OUT</i>
                             </span>
                             <br />
                             <span style={{ fontSize: "0.8rem" }} className="text-black-50">
@@ -256,8 +260,7 @@ function Pousada() {
                     <div className="d-flex flex-column justify-content-center align-items-center pt-4" >
                       <FaChild  className="fs-1 text-black-50 mb-0" />
                       <span className="text-black-50 fw-semibold mt-3  text-center"> CRIANÇA NÃO PAGA </span>
-                      <small style={{fontSize:'0.8rem', lineHeight:'16px'}} className="text-black-50 fw-normal">Até uma  Criança Gratuita</small>
-                      <small style={{fontSize:'0.8rem', lineHeight:'16px'}} className="text-black-50 fw-normal">(idade de 0 à 6 anos)</small>
+                      <small style={{fontSize:'0.8rem', lineHeight:'16px'}} className="text-center text-black-50 fw-normal">Até uma  Criança Gratuita (idade de 0 à 6 anos) </small>
                     </div>
                 </div>
                 <div className="col-6 col-lg-3" >
@@ -290,10 +293,50 @@ function Pousada() {
             </div>
             
         </section>
-      
+     
+
+        {/** Sobre nós  */}
+        <aside className="container">
+         <h5 className="text-black-50 fw-semibold" >Sobre Nós</h5>
+         <div className="text-black-50" >
+              <p>A Villa Container Lodge está situado no município de Capitólio MG. Ela possui uma localização privilegiada, tendo uma linda vista e acesso para a represa de Furnas.</p>
+              
+              <p>Todos os quartos possuem banheiro privativo e completo e os quartos Luxo têm varanda com vista para a lagoa e o nascer do sol.</p>
+              
+              <p>Alguns quartos (Quartos Luxo e Standart Casal) da pousada dispõem de mesa de trabalho e cafeteira Nespresso. Apenas os quartos Luxo possuem frigobar. Todos os quartos possuem ar condicionado e ventilador de teto. </p>
+              
+              <p>Servimos buffet de café da manhã e contamos com serviços adicionais como venda de bebidas (Cervejas, Refris, Sucos, Energéticos e Água), de petiscos e outros.</p>
+              
+              <p>A pousada fica em uma zona rural a 4,5 Km do centro de Capitólio, enquanto Passos está a 74 km da propriedade.</p>
+         </div>
+        </aside>
+
+        {/** Comodidades  */}
+        <div className="mt-5" >
+        <div className="container" >
+          <h5 className="text-black-50 fw-semibold" >Comodidades</h5>
+          <ul className="text-black-50 " >
+            <li>Pet Friendly </li>
+            <li>Ar Condicionado</li>
+            <li>Esportes Aquáticos</li>
+            <li>Café da Manhã</li>
+            <li>Estacionamento Gratuíto</li>
+            <li>Wi-Fi Grátis</li>
+          </ul>
+                </div>
+        </div>
 
       </main>
 
+      <Acomodacoes/>
+
+      <GaleriaFotos/>
+
+      <GoogleMap/>
+
+      <NavbarBooking/>
+
+      <Footer/>
 
     </body>
   );

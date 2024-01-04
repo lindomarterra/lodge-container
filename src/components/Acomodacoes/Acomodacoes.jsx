@@ -12,7 +12,6 @@ function Acomodacoes() {
   return (
     <section className="mb-5 pb-5">
       <div className="container-sm">
-        <hr />
 
         <div className="mb-4">
           <h5 className="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">

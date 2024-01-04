@@ -88,24 +88,42 @@ function QuemSomos() {
               )}
             </div>
             <div className="p-3">
-              <h5 className="text-black-50 fw-bolder">Comodidades:</h5>
+              <h4 className="text-black-50 fw-bolder">Comodidades:</h4>
               <div className="fs-6 text-black-50">
-                <div className="row">
-                  <div className="col-sm-6">
-                    <ul className="ps-1">
-                      <li className="me-2 pe-2">Animais permitido</li>
-                      <li className="me-2 pe-2">Ar condicionado split</li>
-                      <li className="me-2 pe-2">Café da manhã incluso</li>
-                    </ul>
-                  </div>
-                  <div className="col-sm-6">
-                    <ul className="ps-1">
-                      <li className="me-2 pe-2">Esportes aquáticos</li>
-                      <li className="me-2 pe-2">Estacionamento gratuito</li>
-                      <li className="me-2 pe-2">wi-fi grátis</li>
-                    </ul>
+
+                      {/**MOBILE VERSION */}
+                <div className="d-blocl d-sm-none">
+                  <div className="">
+                      <ul className="ps-3">
+                        <li className="me-2 pe-2">Animais permitido</li>
+                        <li className="me-2 pe-2">Ar condicionado split</li>
+                        <li className="me-2 pe-2">Café da manhã incluso</li>
+                        <li className="me-2 pe-2">Esportes aquáticos</li>
+                        <li className="me-2 pe-2">Estacionamento gratuito</li>
+                        <li className="me-2 pe-2">wi-fi grátis</li>
+                      </ul>
                   </div>
                 </div>
+                      {/**DESKTOP VERSION */}
+                <div className="d-none d-sm-block">
+                  <div className="row">
+                    <div className="col-6">
+                      <ul className="ps-1">
+                        <li className="me-2 pe-2">Animais permitido</li>
+                        <li className="me-2 pe-2">Ar condicionado split</li>
+                        <li className="me-2 pe-2">Café da manhã incluso</li>
+                      </ul>
+                    </div>
+                    <div className="col-6">
+                      <ul className="ps-1">
+                        <li className="me-2 pe-2">Esportes aquáticos</li>
+                        <li className="me-2 pe-2">Estacionamento gratuito</li>
+                        <li className="me-2 pe-2">wi-fi grátis</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
             <div>

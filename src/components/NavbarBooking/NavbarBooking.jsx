@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 import "../../index.css";
-import './NavbarBooking.css'
+import "./NavbarBooking.css"
 import { ImWhatsapp } from "react-icons/im";
-import { TbBrandBooking } from "react-icons/tb";
 import { VscCalendar } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
@@ -13,30 +12,21 @@ import { IoIosRemoveCircleOutline } from "react-icons/io";
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { IoBedSharp } from "react-icons/io5";
-import { RiCoupon3Line } from "react-icons/ri";
+import { LuSend } from "react-icons/lu";
 
 function NavbarBooking() {
-  const [navbarShow, setNavbarShow] = useState(false);
   const [calendarOpen, setCalendarOpen] = useState(false);
   const [dateBooking, setDateBooking] = useState(false);
-  const [cupomOpen, setCupomOpen] = useState(false);
-  const [cupomInserido, setCupomInserido] = useState("Insira seu cupom...");
   const [qtdGuest, setQtdGuest] = useState(2);
   const [qtdKids, setQtdKids] = useState(0);
 
-  const showHideNavbarBooking = () => {
-    setNavbarShow(!navbarShow);
-  };
+  
   const shiftArrow = () => {
     setCalendarOpen(!calendarOpen);
   };
   const shiftArrowDateBooking = () => {
     setDateBooking(!dateBooking);
   };
-  const shiftArrowCupom = () => {
-    setCupomOpen(!cupomOpen);
-  };
-
   const addGuest = () => {
     if (qtdGuest >= 4) {
       setQtdGuest(4);
@@ -71,43 +61,24 @@ function NavbarBooking() {
 
   return (
     <body>
-      {/* BOOKING AND WHATSAPP BUTTONS */}
-      <div>
-        <abbr 
-          title="reserve pelo whatsapp"
-          >
+      {/* WHATSAPP BUTTONS */}
+      <div style={{ cursor: "pointer", zIndex: "600" }} className="position-fixed bottom-0 start-0 m-2 px-2 py-1" >
+        <abbr title="reserve pelo whatsapp" >
         <Link 
           to="https://api.whatsapp.com/send?phone=55037999252346" 
-          target="_blank"  
-          style={{ cursor: "pointer", zIndex: "200" }}
-          className="position-fixed bottom-0 start-0 bg-success rounded-5 p-2 mb-1"
-          >
+          target="_blank"            
+          className="bg-success rounded-5">
             <ImWhatsapp className="text-light whatsHover" />
         </Link>
-        </abbr>
-        <abbr
-          style={{ cursor: "pointer", zIndex: "200" }}
-          title="click para selicionar datas"
-          className="position-fixed bottom-0 end-0 bg-black rounded-5 p-2"
-        >
-          <TbBrandBooking
-            className="text-light bookingHover"
-            onClick={showHideNavbarBooking}
-          />
-        </abbr>
+        </abbr>     
       </div>
 
-      {navbarShow ? (
         <div>
           {/*MOBILE*/}
-          <nav
-            style={{ backgroundColor: "#161F30", zIndex: "500" }}
-            className="d-lg-none position-fixed start-0 top-0 w-100"
-          >
+          <nav className="barra-pesquisa d-lg-none position-fixed start-0 bottom-0 w-100">
             <form>
-              <div className="container-fluid py-4 ">
-                <div className="">
-                  <div className="bg-light d-flex py-2 my-1 justify-content-around align-items-center">
+              <div className="container-fluid py-4 text-black-50 ">
+                  <div className="d-flex row justify-content-center ">
                     <VscCalendar style={{ fontSize: "1.5rem" }} />
                     <div> 01 dez - 02 dez </div>
                     {calendarOpen ? (
@@ -150,43 +121,22 @@ function NavbarBooking() {
                     )}
                   </div>
 
-                  <div className="bg-light d-flex py-2 my-1 justify-content-around align-items-center">
-                    <RiCoupon3Line style={{ fontSize: "1.5rem" }} />
-                    <div> {cupomInserido} </div>
-
-                    {cupomOpen ? (
-                      <IoIosArrowUp
-                        style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                        onClick={shiftArrowCupom}
-                        data-bs-dissmiss="#cupom-modal"
-                      />
-                    ) : (
-                      <IoIosArrowDown
-                        style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                        onClick={shiftArrowCupom}
-                        data-bs-toggle="modal"
-                        data-bs-target="#cupom-modal"
-                      />
-                    )}
-                  </div>
-
+                  
                   <div className="bg-danger pesquisar-hover text-white fw-bolder border-light border border-3 d-flex py-1 my-1 justify-content-around align-items-center">
                     Pesquisar
                   </div>
-                </div>
               </div>
             </form>
           </nav>
+
           {/*DESKTOP*/}
-          <nav
-            style={{ backgroundColor: "#161F30", zIndex: "500" }}
-            className="d-none d-lg-block position-fixed start-0 top-0 w-100"
-          >
+          <nav className="barra-pesquisa d-none d-lg-block position-fixed start-0 bottom-0 w-100">
             <form>
-              <div className="container-fluid py-4 ">
-                <div className="row">
+              <div className="container-fluid py-4 text-black-50 ">
+                <div className="row d-flex justify-content-center">
+
                   <div className="col-md-6 col-lg-3">
-                    <div className="bg-light d-flex rounded-5 py-2 justify-content-around align-items-center">
+                    <div className="border border-black d-flex rounded-5 py-2 justify-content-around align-items-center">
                       <VscCalendar style={{ fontSize: "1.5rem" }} />
                       <div> 01 dez - 02 dez </div>
                       {calendarOpen ? (
@@ -205,8 +155,9 @@ function NavbarBooking() {
                       )}
                     </div>
                   </div>
+
                   <div className="col-md-6 col-lg-3">
-                    <div className="bg-light d-flex rounded-5 py-2 justify-content-around align-items-center">
+                    <div className="border border-black d-flex rounded-5 py-2 justify-content-around align-items-center">
                       <GoPeople style={{ fontSize: "1.5rem" }} />
                       <div>
                         {" "}
@@ -230,29 +181,10 @@ function NavbarBooking() {
                       )}
                     </div>
                   </div>
+           
                   <div className="col-md-6 col-lg-3">
-                    <div className="bg-light d-flex rounded-5 py-2 justify-content-around align-items-center">
-                      <RiCoupon3Line style={{ fontSize: "1.5rem" }} />
-                      <div> {cupomInserido} </div>
-
-                      {cupomOpen ? (
-                        <IoIosArrowUp
-                          style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                          onClick={shiftArrowCupom}
-                          data-bs-dissmiss="#cupom-modal"
-                        />
-                      ) : (
-                        <IoIosArrowDown
-                          style={{ fontSize: "1.5rem", cursor: "pointer" }}
-                          onClick={shiftArrowCupom}
-                          data-bs-toggle="modal"
-                          data-bs-target="#cupom-modal"
-                        />
-                      )}
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-lg-3">
-                    <div className="bg-danger pesquisar-hover text-white fw-bolder border-light border border-3 d-flex rounded-5 py-1 justify-content-around align-items-center">
+                    <div className="pesquisar-hover fw-bolder border border-black d-flex rounded-5 py-2 justify-content-center align-items-center">
+                    <LuSend className="fs-4 me-2" />
                       Pesquisar
                     </div>
                   </div>
@@ -260,10 +192,9 @@ function NavbarBooking() {
               </div>
             </form>
           </nav>
+
         </div>
-      ) : (
-        ""
-      )}
+    
 
       {/* MODAL CALENDAR */}
       <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static">
@@ -818,45 +749,7 @@ function NavbarBooking() {
         </div>
       </div>
 
-      {/* MODAL CUPOM */}
-      <div className="modal fade" id="cupom-modal" data-bs-backdrop="static">
-        <div className="modal-dialog">
-          <div className="modal-content container ">
-            <div className="modal-body">
-              <h6 className="text-center text-black-50"> Cupom Promocional </h6>
-              <div className="d-flex align-items-center border border-1 border-opacity-50 p-2">
-                <RiCoupon3Line className="fs-2 text-black-50" />
-                <input
-                  className="cupom-icon border-0 text-black-50 ms-2 ps-2"
-                  type="text"
-                  value={cupomInserido}
-                  onChange={(e) => setCupomInserido(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <div class="modal-footer d-flex justify-content-between ">
-              <button
-                className="btn btn-sm btn-secondary fw-bolder"
-                onClick={shiftArrowCupom}
-                data-bs-dismiss="modal"
-                data-bs-target="#cupom-modal"
-              >
-                {" "}
-                Fechar{" "}
-              </button>
-              <button
-                style={{ backgroundColor: "rgba(44, 99, 121, 0.74)" }}
-                type="button"
-                className="btn btn-sm text-white fw-bolder "
-              >
-                {" "}
-                Salvar Código{" "}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </body>
   );
 }

@@ -7,10 +7,8 @@ import "./Header.css";
 function Header() {
   return (
     <header>
-      <nav
-        style={{ zIndex: "300", backgroundColor: "#fff" }}
-        className="navbar navbar-expand-md position-fixed top-0 w-100 mt-0"
-      >
+
+      <nav className="navbar navbar-expand-md ">
         <div className="container-fluid ">
           <button
             className="navbar-toggler"
@@ -78,6 +76,7 @@ function Header() {
           </div>
         </div>
       </nav>
+
     </header>
   );
 }

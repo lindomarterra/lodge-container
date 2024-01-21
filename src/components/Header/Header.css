@@ -1,3 +1,9 @@
+header nav{
+  position: fixed;
+  width: 100;
+  z-index: 500;
+  margin-top: 0;
+}
 .header-hover {
   font-family: var(--font-01);
   cursor: pointer;
@@ -8,3 +14,4 @@
 .header-hover:hover {
   opacity: 60%;
 }
+

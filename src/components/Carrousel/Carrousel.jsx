@@ -19,13 +19,15 @@ import carouselHome07sm from "../../img/carousel-home07-sm.jpg";
 
 function Carrousel() {
   return (
-    <main style={{ marginTop: "91px" }}>
+    <main >
       <section className="position-relative m-1">
+
         <div className="logo-carrousel d-none d-md-flex">
           <img src={logo} alt="img" className="w-50" />
         </div>
 
-        <div
+          {/**carrousel */}
+        <div 
           id="slide-home"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
@@ -123,6 +125,7 @@ function Carrousel() {
             <span className="carousel-control-next-icon"></span>
           </button>
         </div>
+
       </section>
     </main>
   );
